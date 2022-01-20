@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/svg+xml" href="src/images/icon.svg" />
     <link rel="stylesheet" href="style.css">
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+    <img src="src/images/padjero.gif" id="padj" style="position: absolute; visibility: hidden;" alt="padj">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <a href="index.html">
@@ -25,7 +27,7 @@
                     <a href="pricing.html">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Benefits</a>
+                    <a href="#" id="secret">Benefits</a>
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-primary" onclick="window.open('pricing.html', '_self')">Subscribe</button>
@@ -47,11 +49,11 @@
                     </section>
                 </div>
                 <div class="warranty-badge">
-                    <img src="src/images/ok_icon.png" class="ok-icon">
+                    <img src="src/images/ok_icon.png" class="ok-icon" alt="Ok Icon">
                     <p>30-day warranty</p>
                 </div>
             </section>
-            <img src="src/images/header_image.png">
+            <img src="src/images/header_image.png" alt="Header image">
         </header>
         <div class="container text-block">
             <section class="section-left">
@@ -65,10 +67,10 @@
                     Buy a VPN and surf the Internet in complete privacy and security.
                 </p>
             </section>
-            <img src="src/images/text_block_image_2.png">
+            <img src="src/images/text_block_image_2.png" alt="Illustration">
         </div>
         <div class="container text-block reverse">
-            <img src="src/images/text_block_image_1.png">
+            <img src="src/images/text_block_image_1.png" alt="Illustration">
             <section class="section-left">
                 <h2>Protect all your devices</h2>
                 <p>
@@ -87,10 +89,10 @@
             <section class="container review-container">
                 <div class="review-card">
                     <div class="review-head">
-                        <img src="src/images/placeholder.png">
+                        <img src="src/images/avatar-1.jpg" alt="Avatar">
                         <div class="head-name">
-                            <h3>Name</h3>
-                            <p>Vacancy</p>
+                            <h3>Linda</h3>
+                            <p>PR-Manager</p>
                         </div>
                     </div>
                     <p>
@@ -101,10 +103,10 @@
                 </div>
                 <div class="review-card">
                     <div class="review-head">
-                        <img src="src/images/placeholder.png">
+                        <img src="src/images/avatar-2.jpg" alt="Avatar">
                         <div class="head-name">
-                            <h3>Name</h3>
-                            <p>Vacancy</p>
+                            <h3>Gregory</h3>
+                            <p>IT-Specialist</p>
                         </div>
                     </div>
                     <p>
@@ -115,10 +117,10 @@
                 </div>
                 <div class="review-card">
                     <div class="review-head">
-                        <img src="src/images/placeholder.png">
+                        <img src="src/images/avatar-3.jpg" alt="Avatar">
                         <div class="head-name">
-                            <h3>Name</h3>
-                            <p>Vacancy</p>
+                            <h3>William</h3>
+                            <p>Analyst</p>
                         </div>
                     </div>
                     <p>
@@ -201,6 +203,16 @@
             </p>
         </footer>
     </div>
+    <script type="text/javascript">
+        let count = 0;
+        $("#secret").on("click", function () {
+            console.log(count);
+            count++;
+            if (count >= 5) {
+                $("#padj").css("visibility", "visible");
+            }
+        });
+    </script>
 </body>
 
 </html>

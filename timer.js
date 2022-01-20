@@ -1,7 +1,9 @@
+
+
 let timerHTML = document.querySelector("time");
 
 let time = 43200;
-timer = setInterval(function () {
+let timer = setInterval(function () {
     let seconds = time % 60;
     let minutes = time / 60 % 60;
     let hours = time / 3600 % 60;
