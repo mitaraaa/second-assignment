@@ -9,6 +9,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/svg+xml" href="src/images/icon.svg" />
     <link rel="stylesheet" href="style.css">
@@ -209,6 +210,7 @@
             console.log(count);
             count++;
             if (count >= 5) {
+                party.confetti(this);
                 $("#padj").css("visibility", "visible");
             }
         });
