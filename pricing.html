@@ -1,115 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/svg+xml" href="src/images/icon.svg"/>
-        <link rel="stylesheet" href="style.scss">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>VPN - Pricing</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container">
-                <a href="index.html">
-                    <img src="src/images/icon.svg" class="navbar-brand" alt="Icon">
-                </a>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="pricing.html">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Benefits</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-primary" onclick="window.open('pricing.html', '_self')">Subscribe</button>
-                    </li>
-                </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="src/images/icon.svg" />
+    <link rel="stylesheet" href="/second-assignment/style.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VPN - Pricing</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a href="index.html">
+                <img src="src/images/icon.svg" class="navbar-brand" alt="Icon">
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Benefits</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-primary" onclick="window.open('pricing.html', '_self')">Subscribe</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container pricing">
+        <h1>Save big with our annual plans</h1>
+        <p>Premium security. Really fast connection. 30-day money-back guarantee.</p>
+        <section>
+            <div class="card outline">
+                <h3>2 years plan</h3>
+                <h1>5,00$</h1>
+                <h3>per month</h3>
+                <div class="badge">
+                    <p>50% off</p>
+                </div>
+                <button class="btn btn-outline-dark">Buy</button>
             </div>
-        </nav>
-        <div class="container pricing">
-            <h1>Save big with our annual plans</h1>
-            <p>Premium security. Really fast connection. 30-day money-back guarantee.</p>
-            <section>
-                <div class="card outline">
-                    <h3>2 years plan</h3>
-                    <h1>5,00$</h1>
-                    <h3>per month</h3>
-                    <div class="badge">
-                        <p>50% off</p>
-                    </div>
-                    <button class="btn btn-outline-dark">Buy</button>
+            <div class="card">
+                <h3>1 year plan</h3>
+                <h1>7,00$</h1>
+                <h3>per month</h3>
+                <div class="badge bg-secondary">
+                    <p>30% off</p>
                 </div>
-                <div class="card">
-                    <h3>1 year plan</h3>
-                    <h1>7,00$</h1>
-                    <h3>per month</h3>
-                    <div class="badge bg-secondary">
-                        <p>30% off</p>
-                    </div>
-                    <button class="btn btn-outline-dark">Buy</button>
+                <button class="btn btn-outline-dark">Buy</button>
+            </div>
+            <div class="card">
+                <h3>Month plan</h3>
+                <h1>10,00$</h1>
+                <h3>per month</h3>
+                <div class="badge bg-secondary">
+                    <p>0% off</p>
                 </div>
-                <div class="card">
-                    <h3>Month plan</h3>
-                    <h1>10,00$</h1>
-                    <h3>per month</h3>
-                    <div class="badge bg-secondary">
-                        <p>0% off</p>
-                    </div>
-                    <button class="btn btn-outline-dark">Buy</button>
-                </div>
-            </section>
-        </div>
-        <div class="container-fluid">
-            <div class="container why-us">
-                <h1>3 reasons to pick our VPN</h1>
-                <div class="row align-items-center">
-                    <section class="col d-flex flex-column align-self-start">
-                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id="" class="Graphic-SVG SVG SVG--inline d-inline-block c-blu-6 lazyloaded" preserveAspectRatio="xMidYMid meet"><path d="M27.124 18.615L11.03 29.24c-1.219.805-2.839.437-3.618-.824A2.774 2.774 0 0 1 7 26.96V5.708C7 4.212 8.173 3 9.62 3c.5 0 .99.148 1.41.426l16.094 10.626c1.219.805 1.576 2.479.797 3.739a2.665 2.665 0 0 1-.797.824z" fill="#151922" fill-rule="evenodd"></path></svg>
-                        <h2>Fastest on the planet</h2>
-                        <p>
-                            5200+ ultra-fast VPN servers around the globe. No bandwidth limits.
-                            Experience top-speed online security with VPN.
-                        </p>
-                    </section>
-                    <section class="col d-flex flex-column align-self-start">
-                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id="" class="Graphic-SVG SVG SVG--inline d-inline-block c-blu-6 lazyloaded" preserveAspectRatio="xMidYMid meet"><path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0zm-2 22.8L7.2 16l2.8-2.8 4 4 8-8 2.8 2.8L14 22.8z" fill="#151922"></path></svg>
-                        <h2>Safe, easy content access</h2>
-                        <p>
-                            HD movies, live sports, hot TV shows?
-                            We got it. It takes just a click or tap to cloak your IP at home or while traveling,
-                            letting you view your favorite content in privacy and security.
-                        </p>
-                    </section>
-                    <section class="col d-flex flex-column align-self-start">
-                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id="" class="Graphic-SVG SVG SVG--inline d-inline-block c-blu-6 lazyloaded" preserveAspectRatio="xMidYMid meet"><path d="M29.149 11.338c1.596 1.925 2.502 3.517 2.596 3.687a2 2 0 0 1-.002 1.96C31.489 17.433 25.415 28 16 28c-1.086 0-2.122-.151-3.114-.4l3.63-3.63c5.422-.33 9.602-5.71 11.122-7.97a27.212 27.212 0 0 0-1.338-1.813l2.848-2.848zM.587 31.416a1.997 1.997 0 0 1-.002-2.826l5.058-5.058C2.345 20.582.397 17.229.257 16.979a1.997 1.997 0 0 1-.004-1.95C.503 14.579 6.49 4 16 4c2.662 0 5.03.861 7.096 2.075l5.49-5.49a1.998 1.998 0 0 1 2.828 0 1.998 1.998 0 0 1 0 2.829l-28 28c-.39.39-.902.586-1.414.586a1.995 1.995 0 0 1-1.414-.586zM4.363 16c.756 1.126 2.208 3.021 4.118 4.693l3.668-3.668A3.85 3.85 0 0 1 12 16c0-2.21 1.79-4 4-4 .356 0 .696.059 1.024.149l3.132-3.132C18.875 8.402 17.485 8 16 8c-5.708 0-10.084 5.67-11.638 7.998z" fill="#151922"></path></svg>
-                        <h2>No-logs policy</h2>
-                        <p>
-                            We couldn’t provide any details about you to third parties even if they asked.
-                            Why? Because we never log what you do online. We’ve got nothing to reveal.
-                        </p>
-                    </section>
-                </div>
+                <button class="btn btn-outline-dark">Buy</button>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid">
+        <div class="container why-us">
+            <h1>3 reasons to pick our VPN</h1>
+            <div class="row align-items-center">
+                <section class="col d-flex flex-column align-self-start">
+                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id=""
+                        class="Graphic-SVG SVG SVG--inline d-inline-block c-blu-6 lazyloaded"
+                        preserveAspectRatio="xMidYMid meet">
+                        <path
+                            d="M27.124 18.615L11.03 29.24c-1.219.805-2.839.437-3.618-.824A2.774 2.774 0 0 1 7 26.96V5.708C7 4.212 8.173 3 9.62 3c.5 0 .99.148 1.41.426l16.094 10.626c1.219.805 1.576 2.479.797 3.739a2.665 2.665 0 0 1-.797.824z"
+                            fill="#151922" fill-rule="evenodd"></path>
+                    </svg>
+                    <h2>Fastest on the planet</h2>
+                    <p>
+                        5200+ ultra-fast VPN servers around the globe. No bandwidth limits.
+                        Experience top-speed online security with VPN.
+                    </p>
+                </section>
+                <section class="col d-flex flex-column align-self-start">
+                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id=""
+                        class="Graphic-SVG SVG SVG--inline d-inline-block c-blu-6 lazyloaded"
+                        preserveAspectRatio="xMidYMid meet">
+                        <path
+                            d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0zm-2 22.8L7.2 16l2.8-2.8 4 4 8-8 2.8 2.8L14 22.8z"
+                            fill="#151922"></path>
+                    </svg>
+                    <h2>Safe, easy content access</h2>
+                    <p>
+                        HD movies, live sports, hot TV shows?
+                        We got it. It takes just a click or tap to cloak your IP at home or while traveling,
+                        letting you view your favorite content in privacy and security.
+                    </p>
+                </section>
+                <section class="col d-flex flex-column align-self-start">
+                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id=""
+                        class="Graphic-SVG SVG SVG--inline d-inline-block c-blu-6 lazyloaded"
+                        preserveAspectRatio="xMidYMid meet">
+                        <path
+                            d="M29.149 11.338c1.596 1.925 2.502 3.517 2.596 3.687a2 2 0 0 1-.002 1.96C31.489 17.433 25.415 28 16 28c-1.086 0-2.122-.151-3.114-.4l3.63-3.63c5.422-.33 9.602-5.71 11.122-7.97a27.212 27.212 0 0 0-1.338-1.813l2.848-2.848zM.587 31.416a1.997 1.997 0 0 1-.002-2.826l5.058-5.058C2.345 20.582.397 17.229.257 16.979a1.997 1.997 0 0 1-.004-1.95C.503 14.579 6.49 4 16 4c2.662 0 5.03.861 7.096 2.075l5.49-5.49a1.998 1.998 0 0 1 2.828 0 1.998 1.998 0 0 1 0 2.829l-28 28c-.39.39-.902.586-1.414.586a1.995 1.995 0 0 1-1.414-.586zM4.363 16c.756 1.126 2.208 3.021 4.118 4.693l3.668-3.668A3.85 3.85 0 0 1 12 16c0-2.21 1.79-4 4-4 .356 0 .696.059 1.024.149l3.132-3.132C18.875 8.402 17.485 8 16 8c-5.708 0-10.084 5.67-11.638 7.998z"
+                            fill="#151922"></path>
+                    </svg>
+                    <h2>No-logs policy</h2>
+                    <p>
+                        We couldn’t provide any details about you to third parties even if they asked.
+                        Why? Because we never log what you do online. We’ve got nothing to reveal.
+                    </p>
+                </section>
             </div>
         </div>
-        <div class="container guarantee">
-            <img src="src/images/money-back-badge.svg">
-            <section>
-                <h1>30-day money-back guarantee</h1>
-                <p>
-                    Enjoy full access to the award-winning VPN completely risk-free.
-                    If you are not 100% satisfied, tell us within 30 days of buying VPN and get a full refund.
-                </p>
-                <button class="btn btn-primary" onclick="window.open('pricing.html', '_self')">Subscribe</button>
-            </section>
-        </div>
-        <footer>
+    </div>
+    <div class="container guarantee">
+        <img src="src/images/money-back-badge.svg">
+        <section>
+            <h1>30-day money-back guarantee</h1>
             <p>
-                Bebra, Inc © 2022
-                <br>
-                <span>Text and illustrations from: nordvpn.com</span>
+                Enjoy full access to the award-winning VPN completely risk-free.
+                If you are not 100% satisfied, tell us within 30 days of buying VPN and get a full refund.
             </p>
-        </footer>
-    </body>
+            <button class="btn btn-primary" onclick="window.open('pricing.html', '_self')">Subscribe</button>
+        </section>
+    </div>
+    <footer>
+        <p>
+            Bebra, Inc © 2022
+            <br>
+            <span>Text and illustrations from: nordvpn.com</span>
+        </p>
+    </footer>
+</body>
+
 </html>
